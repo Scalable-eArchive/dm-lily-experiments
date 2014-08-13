@@ -1,0 +1,29 @@
+{
+namespaces: {
+"article": "a"
+},
+fieldTypes: [
+{ name: "a$name", valueType: "STRING" },
+{ name: "a$email", valueType: "STRING" },
+{ name: "a$title", valueType: "STRING" },
+{ name: "a$authors", valueType: "LIST<RECORD<{article}author>>" },
+{ name: "a$body", valueType: "STRING" }
+],
+recordTypes: [
+{
+name: "a$author",
+fields: [
+{name: "a$name", mandatory: true },
+{name: "a$email", mandatory: true }
+]
+},
+{
+name: "a$article",
+fields: [
+{name: "a$title", mandatory: true },
+{name: "a$authors", mandatory: true },
+{name: "a$body", mandatory: true }
+]
+}
+]
+}

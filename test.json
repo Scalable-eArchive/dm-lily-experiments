@@ -1,0 +1,7 @@
+{ 
+  "records": [ 
+    {"field1": "outer", "field2": "thought"}, 
+    {"field2": "thought", "field1": "outer"} 
+  ] ,
+  "special message": "hello, world!" 
+}
